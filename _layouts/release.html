@@ -16,7 +16,7 @@ end_of_page: |
     {% if page.optional_date %}
       <p class="summary">{{ page.optional_date | date:"%e %B %Y" }}</p>
     {% endif %}
-    {% include helpers/hero-social.html %}
+    {% include_cached helpers/hero-social.html %}
   </div>
 </div>
 
@@ -29,7 +29,7 @@ end_of_page: |
         <div class="sidebar">
           <div class="sidebar-inner" markdown="1">
             <button class="mob-sidebar-close" hidden></button>
-            {% include helpers/toc.html html=content %}
+            {% include_cached helpers/toc.html html=content %}
           </div>
         </div>
       </div>
