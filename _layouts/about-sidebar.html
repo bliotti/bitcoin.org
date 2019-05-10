@@ -16,7 +16,7 @@ end_of_page: |
   <div class="container hero-container">
     <h1>{% translate pagetitle %}</h1>
     <p class="summary">{% translate pagedesc %}</p>
-     {% include helpers/hero-social.html %}
+     {% include_cached helpers/hero-social.html %}
   </div>
 </div>
 
@@ -139,7 +139,7 @@ end_of_page: |
           <div class="sidebar">
             <div class="sidebar-inner">
               <button class="mob-sidebar-close" hidden></button>
-              {% include helpers/toc.html html=content %}
+              {% include_cached helpers/toc.html html=content %}
             </div>
           </div>
         </div>
