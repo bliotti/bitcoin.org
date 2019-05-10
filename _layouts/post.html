@@ -26,7 +26,7 @@ end_of_page: |
 <header class="hero">
   <div class="container hero-container">
     <h1>{{ page.title }}</h1>
-     {% include helpers/hero-social.html %}
+     {% include_cached helpers/hero-social.html %}
   </div>
 </header>
 
@@ -39,7 +39,7 @@ end_of_page: |
         <div class="sidebar">
           <div class="sidebar-inner" markdown="1">
             <button class="mob-sidebar-close" hidden></button>
-            {% include helpers/toc.html html=content %}
+            {% include_cached helpers/toc.html html=content %}
           </div>
         </div>
       </div>
