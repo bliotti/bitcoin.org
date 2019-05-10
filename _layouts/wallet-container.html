@@ -18,13 +18,13 @@ max_wallet_text_length: 418  ## Unicode characters
         <p class="wallet-description">
           {% translate wallet{{page.wallet.id}} choose-your-wallet %}
         </p>
-        {% include helpers/hero-social.html %}
+        {% include_cached helpers/hero-social.html %}
       </div>
     </div>
     <div class="wallet-navigation-wrapper">
       <div class="wallet-navigation">
-        {% include layout/base/wallets-menu-mobile.html %} 
-        {% include layout/base/wallets-list.html %}
+        {% include_cached layout/base/wallets-menu-mobile.html %} 
+        {% include_cached layout/base/wallets-list.html %}
       </div>
     </div>
   </div>
@@ -89,4 +89,4 @@ max_wallet_text_length: 418  ## Unicode characters
   </div>
 </div>
 
-{% include layout/base/wallets-filter.html %} 
+{% include_cached layout/base/wallets-filter.html %} 
