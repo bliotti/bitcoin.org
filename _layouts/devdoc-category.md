@@ -13,7 +13,7 @@ end_of_page: |
 
 {% if page.show_subhead_links_on_top %}
 {% capture filename %}{{page.filename}}{% endcapture %}
-{% include helpers/subhead-links.md %}
+{% include_cached helpers/subhead-links.md %}
 <br>
 {% endif %}
 
@@ -25,7 +25,7 @@ end_of_page: |
     <h1>{% translate pagetitle %}</h1>
     {% endif %}
     <p class="summary">{% translate summary %}</p>
-    {% include helpers/hero-social.html %}
+    {% include_cached helpers/hero-social.html %}
   </div>
 </div>
 
@@ -54,12 +54,12 @@ end_of_page: |
   {% endif %}
 
   {% if page.show_fragments %}
-  {% include helpers/fragment_reviews_needed.md %}
+  {% include_cached helpers/fragment_reviews_needed.md %}
   {% endif %}
 
   {% unless page.hide_translation_disclaimer %}
   {% if page.lang != 'en' %}
-  {% include helpers/fragment_translation_warning.md %}
+  {% include_cached helpers/fragment_translation_warning.md %}
   {% endif %}
   {% endunless %}
 
@@ -67,7 +67,7 @@ end_of_page: |
   {{ content }}
 
   {{ site.glossary_links }}
-  {% include references.md %}
+  {% include_cached references.md %}
   {% endmarkdown %}
   </div>
 </div>
