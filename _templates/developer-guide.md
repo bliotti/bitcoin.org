@@ -20,7 +20,7 @@ show_toc: true
   <div class="container hero-container">
     <h1>{% translate pagetitle %}</h1>
     <p class="summarytxt">{% translate summary %}</p>
-    {% include helpers/hero-social.html %}
+    {% include_cached helpers/hero-social.html %}
   </div>
 </div>
 
