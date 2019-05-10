@@ -11,45 +11,45 @@ use the base template -->
 {% endcomment %}
 
 <head>
-{% include layout/base-core/html-head-jquery-css.html %}
-{% include layout/base/html-head.html %}
+{% include_cached layout/base-core/html-head-jquery-css.html %}
+{% include_cached layout/base/html-head.html %}
 </head>
 
 <body>
-{% include layout/base/pagetop-donation.html %}
-{% include layout/base/pagetop-detect-mobile.html %}
-{% include layout/base/pagetop-alert.html %}
-{% include layout/base-core/pagetop-moved-notice.html %}
+{% include_cached layout/base/pagetop-donation.html %}
+{% include_cached layout/base/pagetop-detect-mobile.html %}
+{% include_cached layout/base/pagetop-alert.html %}
+{% include_cached layout/base-core/pagetop-moved-notice.html %}
 
 <div class="head"><div>
-  {% include layout/base/head-mobile-menu.html %}
+  {% include_cached layout/base/head-mobile-menu.html %}
   {% if page.lang == 'en' %}
-    {% include layout/base-core/head-logo.html %}
-    {% include layout/base-core/head-menu.html %}
+    {% include_cached layout/base-core/head-logo.html %}
+    {% include_cached layout/base-core/head-menu.html %}
   {% else %}
-    {% include layout/base/head-logo.html %}
-    {% include layout/base/head-menu.html %}
+    {% include_cached layout/base/head-logo.html %}
+    {% include_cached layout/base/head-menu.html %}
   {% endif %}
-    {% include layout/base/head-language-dropdown.html %}
-    {% include layout/base/head-language-select.html %}
+    {% include_cached layout/base/head-language-dropdown.html %}
+    {% include_cached layout/base/head-language-select.html %}
 </div></div>
 
 <div class="body">
   {% if page.lang == 'en' %}
-    {% include layout/base/breadcrumbs.html %}
+    {% include_cached layout/base/breadcrumbs.html %}
   {% endif %}
-  {% include layout/base-core/content.html %}
+  {% include_cached layout/base-core/content.html %}
   <div class="footer">
     <div class="container">
-      {% include layout/base/footer-logo.html %}
-      {% include layout/base/footer-menu.html %}
+      {% include_cached layout/base/footer-logo.html %}
+      {% include_cached layout/base/footer-menu.html %}
     </div>
-    {% include layout/base-core/footer-license.html %}
+    {% include_cached layout/base-core/footer-license.html %}
   </div>
 </div>
 
-{% include layout/base-core/footer-js-extra.html %}
-{% include layout/base/footer-js.html %}
+{% include_cached layout/base-core/footer-js-extra.html %}
+{% include_cached layout/base/footer-js.html %}
 </body>
 
 </html>
