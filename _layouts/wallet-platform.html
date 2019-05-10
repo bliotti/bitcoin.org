@@ -9,13 +9,13 @@ layout: wallet-platform-container
   <div class="container hero-container">
     <h1>{% translate pagetitle choose-your-wallet %}</h1>
     <p class="summary">{% translate pagedesc choose-your-wallet %}</p>
-    {% include helpers/hero-social.html %}
+    {% include_cached helpers/hero-social.html %}
   </div>
 </div>
 
-{% include layout/base/wallets-menu.html %}
-{% include layout/base/wallets-menu-mobile.html %}
-{% include layout/base/wallets-list.html %}
+{% include_cached layout/base/wallets-menu.html %}
+{% include_cached layout/base/wallets-menu-mobile.html %}
+{% include_cached layout/base/wallets-list.html %}
 
 <div class="container">
   <div class="walletsdisclaimer">
